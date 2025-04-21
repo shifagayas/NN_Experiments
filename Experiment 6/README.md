@@ -76,4 +76,6 @@ This code defines a simple Recurrent Neural Network (RNN) model for handling seq
 - A plain RNN is used, which works well for small datasets. For larger datasets, RNNs may not perform well due to the vanishing gradient problem. In such cases, models like **Long Short-Term Memory (LSTM)** should be preferred.  
 - In this case, using LSTM gives even lower accuracy because the dataset is small and does not require storing long-term information. A plain RNN performs well for this dataset.  
 
----  
+
+
+--- 
