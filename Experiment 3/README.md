@@ -1,14 +1,21 @@
 Three-Layer Neural Network for MNIST Classification
+
 Objective
+
 Write a program to implement a three-layer neural network using the TensorFlow library (without Keras) to classify the MNIST handwritten digits dataset. The implementation demonstrates feed-forward and back-propagation approaches.
 
 Model Description
+
 This is a three-layer neural network implemented using TensorFlow for classifying handwritten digits from the MNIST dataset.
 
 Model Architecture
+
 Input Layer (784 neurons): Accepts flattened 28x28 pixel images.
+
 Hidden Layer 1 (128 neurons): Uses ReLU activation to learn non-linear features.
+
 Hidden Layer 2 (64 neurons): Uses ReLU activation for deeper representation.
+
 Output Layer (10 neurons): Uses softmax activation to classify digits (0-9).
 Training Details
 Loss Function: Categorical cross-entropy.
@@ -46,11 +53,17 @@ Prints training loss & accuracy.
 Evaluates the trained model on test data.
 
 Comments
+
 ✅ Good Implementation
+
 Uses raw TensorFlow without Keras for full control.
 Efficient training with mini-batch gradient descent.
+
 ✅ Basic Model
+
 Works well for MNIST but may not generalize to complex tasks.
+
 🔹 Improvement Suggestions
+
 Use Adam optimizer instead of SGD for faster convergence.
 Ensure TensorFlow v2 Compatibility by using tf.compat.v1.disable_eager_execution() for TF2 users.
